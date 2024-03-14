@@ -1,0 +1,27 @@
+.header__page {
+   padding: 8% 15px 22.55px;
+   @media screen and (max-width: 1900px) {
+      padding: 3% 15px 27px;
+   }
+   @media screen and (max-width: 768px) {
+      padding: 19px 15px 27px;
+   }
+}
+.header__body {
+   justify-content: flex-start;
+   align-items: center;
+   gap: 34px;
+   @media screen and (max-width: 768px) {
+      justify-content: center;
+   }
+}
+.header__logo {
+   display: flex;
+   align-items: center;
+   gap: 34px;
+}
+.header__logo-title {
+   @media screen and (max-width: 768px) {
+      display: none;
+   }
+}

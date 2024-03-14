@@ -1,0 +1,55 @@
+.content__tikets {
+   grid-area: tikets;
+   display: flex;
+   flex-direction: column;
+   gap: 47px;
+}
+.tiket__body {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-row-gap: 25px;
+   grid-column-gap: 15px;
+   justify-content: center;
+   grid-template-areas: 
+   'price price logo'
+   'time duration transplants';
+   border-radius: 10px;
+   background: #E8EBF2;
+   padding: 27px 24px 25px 23px;
+}
+.tiket__price {
+   grid-area: price;
+}
+.tiket__price-text {
+   color: #4E148C;
+   @include adaptiveFont(32, 32);   
+   font-weight: 700;
+}
+.tiket__logo {
+   grid-area: logo;
+}
+.tiket__details {
+   display: flex;
+   flex-direction: column;
+   gap: 9px;
+}
+.tiket__time {
+   grid-area: time;
+}
+.tiket__title-text {
+   color: #858AE3;
+   @include adaptiveFont(16, 16);   
+   font-weight: 500;
+}
+.tiket__subtitle-text {
+   color: #4E148C;
+   @include adaptiveFont(16, 16);   
+   font-weight: 500;
+}
+.tiket__duration {
+   grid-area: duration;
+}
+.tiket__transplants {
+   grid-area: transplants;
+}

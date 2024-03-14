@@ -1,0 +1,87 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+ }
+ 
+ *, *:before, *:after {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ 
+ :focus, :active {
+   outline: none;
+ }
+ 
+ a:focus, a:active {
+   outline: none;
+ }
+ 
+ nav, footer, header, aside {
+   display: block;
+ }
+ 
+ html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;   
+    color: #4E148C;
+    font-style: normal;
+    line-height: normal;
+    background: #F7F9F7;
+    display: flex;
+    justify-content: center;
+    scroll-behavior: smooth;
+ }
+ 
+ input, button, textarea {
+   font-family: inherit;
+ }
+ 
+ input::-ms-clear {
+   display: none;
+ }
+ 
+ button {
+   cursor: pointer;
+ }
+ 
+ button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+ }
+ 
+ a, a:visited {
+   text-decoration: none;
+ }
+ 
+ a:hover {
+   text-decoration: none;
+ }
+ 
+ ul li {
+   list-style: none;
+ }
+ 
+ img {
+   vertical-align: top;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+   font-size: inherit;
+   font-weight: inherit;
+ }
+ 
+@import './styles/common.scss';
+@import './styles/variables.scss';
+@import './components/global/Header/header.scss';
+@import './components/local/Content/content.scss';
+@import './components/local/Sidebar/sidebar.scss';
+@import './components/local/Filtration/filtration.scss';
+@import './components/local/Ticket/ticket.scss';
+@import './components/local/Button/button.scss';
+

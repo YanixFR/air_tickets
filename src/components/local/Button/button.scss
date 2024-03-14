@@ -1,0 +1,17 @@
+.content__button {
+   grid-area: buttons;
+}
+.content__btn {
+   width: 100%;
+   padding: 16px 0 17px;
+   border-radius: 10px;
+   background: var(--colors-purple, #4E148C);
+   color: #F7F9F7;
+   @include adaptiveFont(24, 24);   
+   font-weight: 700;
+   line-height: normal;
+   &:hover {
+      background: #4e148c99;
+      color: #F7F9F7;
+   }
+}

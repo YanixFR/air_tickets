@@ -1,0 +1,21 @@
+.content__card {
+   display: grid;
+   grid-template-columns: 272px 727px;
+   gap: 50px;
+   justify-content: center;
+   grid-template-areas: 
+   'sidebar filtration'
+   'sidebar tikets'
+   'sidebar buttons';
+   @media screen and (max-width: 1024px) {
+      grid-template-columns: 1fr 2fr;
+   }
+   @media screen and (max-width: 768px) {
+      grid-template-columns: 100%;
+      grid-template-areas: 
+      'filtration'
+      'sidebar'
+      'tikets'
+      'buttons';
+   }
+}
